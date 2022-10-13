@@ -20,8 +20,8 @@ def generate_shortest_path_matrix(graph):
     shortest_path_matrix = [[0 for _ in range(8)] for _ in range(8)]
     for node in graph.keys():
         visited = []  # List to keep track of visited nodes.
-        bfs(visited, graph, node, shortest_path_matrix)
         print(f'\nBFS from node {node}:')
+        bfs(visited, graph, node, shortest_path_matrix)
         for value in graph.values():
             value[1] = 0    # Reset each node's distance counter
     return shortest_path_matrix
