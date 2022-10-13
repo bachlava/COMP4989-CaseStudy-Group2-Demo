@@ -55,5 +55,6 @@ if __name__ == "__main__":
         7: [[3, 4, 6], 0]
     }
     result_matrix = generate_shortest_path_matrix(G)
+    print("\nShortest Path Matrix:")
     for row in result_matrix:
         print(row)
